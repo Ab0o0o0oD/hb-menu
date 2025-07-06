@@ -1,13 +1,7 @@
-import './App.css'
-import Hero from "@/pages/Hero";
-import {Header} from "@/pages/Header";
-
-
-function App() {
-
+export const ResponsiveLayOut = () => {
     return (
         <div className="flex flex-col">
-            <div className={"text-center text-white py-4"}><Header/></div>
+            <div className={"bg-blue-500 text-center text-white py-4"}>Top ssection</div>
 
             <div className="flex flex-col md:flex-row">
                 <div className={"w-full md:w-1/2 bg-red-500 text-white text-center py-4"}>Left Column</div>
@@ -17,18 +11,5 @@ function App() {
                 Centered Content
             </div>
         </div>
-
-
-
-        // <div className="flex">
-        //     <header className="">
-        //         <Header/>
-        //     </header>
-        //     <main>
-        //         <Hero/>
-        //     </main>
-        // </div>
     )
 }
-
-export default App
