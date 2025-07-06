@@ -18,10 +18,10 @@ export const TabBtn = ({
     return (
         <button
             type="button"
-            className={`${className} py-4 px-1 inline-flex items-center gap-x-2 border-b-2 text-sm whitespace-nowrap ${
+            className={`${className} py-4 px-1 inline-flex items-center gap-x-2 border-b-2 text-lg font-bold whitespace-nowrap ${
                 activeTab === label
-                    ? 'border-blue-600 text-blue-600 font-semibold'
-                    : 'border-transparent text-gray-500 hover:text-black-200'
+                    ? 'border-red-600 text-red-400 font-semibold'
+                    : 'border-transparent text-gray-600 hover:text-black-200'
             }`}
             onClick={(e) => {
                 e.preventDefault();

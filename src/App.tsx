@@ -1,18 +1,13 @@
 import './App.css'
 import {Header} from "@/pages/Header";
 import landing from './assets/landing-image.png'
-import middle from './assets/middle.jpg'
 import {Tabs} from "@/components/ui/Tabs.tsx";
 import {Team} from "@/components/ui/Team.tsx";
+import {Footer} from "@/components/footer/Footer.tsx";
 
 function App() {
-    const tableItemss = [
-        {name: "Pizza", anchor: "#pizza"},
-        {name: "Shawarma", anchor: "#shawarma"},
-        {name: "Frokost", anchor: "#frokost"}
-    ];
     return (
-        <div className="p-5 md:p-10 flex flex-col xl:px-100 gap-12">
+        <div className="px-5 py-1 md:px-10 flex flex-col xl:px-100 gap-5">
             <div className={"text-center text-white"}>
                 <Header/>
             </div>
@@ -39,27 +34,29 @@ function App() {
                         </div>
                     </div>
                     <div
-                        className="hidden md:flex w-full md:w-1/2 bg-gray-500 text-white text-center"
-                        style={{
-                            background: `url(${middle}) no-repeat center center / cover`
-                        }}
+                        className="hidden md:flex w-full md:w-1/2  text-white text-center md:overflow-hidden md:rounded-b-full -rotate-8"
+                        // style={{
+                        //     background: `url(${landing}) no-repeat center center / cover`
+                        // }}
                     >
-                        <img src={landing} alt="Face" className="w-full h-full object-contain p-10"/>
+                        <img src={landing} alt="Face" className="w-full h-full object-cover object-center"/>
                     </div>
                 </div>
-                {/*<div className="h-64 flex items-center justify-center text-white">*/}
-                {/*    <Team/>*/}
-                {/*</div>*/}
+                <div className="flex flex-1  items-start text-white pt-20 md:pt-0">
+                    <Team/>
+                </div>
+
             </div>
             <div
                 id="menu-section"
                 className="min-h-screen pt-10 h-auto flex items-start justify-start flex-col text-white"
             >
                 <h1 className="text-3xl font-semibold mb-5 text-black dark:text-white md:4px lg:text-start text-center">
-                    Our Menu
+                    Our Menu:
                 </h1>
                 <Tabs/>
             </div>
+            <Footer/>
         </div>
 
 
