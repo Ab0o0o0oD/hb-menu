@@ -52,3 +52,15 @@ export default tseslint.config({
   },
 })
 ```
+## Seo:
+#### * sitemap for react router: https://dev.to/theudemezue/how-to-create-a-sitemapxml-in-react-js-3pk9
+#### * add robots.txt to public folder
+#### * add open graph tags to index.html
+#### * add meta tags to index.html
+#### * Let search engines index this site
+#### * Connect this site to Google Search Console
+#### * Let search engines index this site’s menu pages by default
+#### * Connect this site to Google Business Profile
+#### * Add a favicon to this site
+#### * Optimize and update sitemaps
+#### * Activate IndexNow functionality
