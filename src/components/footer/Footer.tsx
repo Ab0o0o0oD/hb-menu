@@ -25,7 +25,7 @@ export const Footer = () => {
           <a href="https://instagram.com/hungrybird.food/" target="_blank" rel="noopener noreferrer">
             <img src={insta} alt={'tiktok'} className="w-6 h-6" />
           </a>
-          <a href="https://wa.me/+4741133081" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+4792244972" target="_blank" rel="noopener noreferrer">
             <img src={whatsapp} alt={'whatsapp'} className="w-6 h-6" />
           </a>
         </div>
