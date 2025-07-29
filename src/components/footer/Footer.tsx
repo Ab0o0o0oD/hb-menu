@@ -1,6 +1,6 @@
 import insta from '../../assets/ig-instagram-icon.svg';
 import tiktok from '../../assets/tiktok-color-icon.svg';
-import whatsapp from '../../assets/wa-whatsapp-icon.svg';
+import call from '../../assets/accept-call-icon.svg';
 import facebook from '../../assets/facebook-round-color-icon.svg';
 export const Footer = () => {
   return (
@@ -25,9 +25,12 @@ export const Footer = () => {
           <a href="https://instagram.com/hungrybird.food/" target="_blank" rel="noopener noreferrer">
             <img src={insta} alt={'tiktok'} className="w-6 h-6" />
           </a>
-          <a href="https://wa.me/+4792244972" target="_blank" rel="noopener noreferrer">
-            <img src={whatsapp} alt={'whatsapp'} className="w-6 h-6" />
+          <a href="tel:+4741133081" target="_blank" rel="noopener noreferrer">
+            <img src={call} alt={'call-icon'} className="w-6 h-6" />
           </a>
+          {/*<a href="https://wa.me/+4741133081" target="_blank" rel="noopener noreferrer">*/}
+          {/*  <img src={whatsapp} alt={'whatsapp'} className="w-6 h-6" />*/}
+          {/*</a>*/}
         </div>
       </div>
       <p className="text-center text-gray-700 font-medium">&copy; 2025 Hungry birds AS. All rights reservered.</p>
