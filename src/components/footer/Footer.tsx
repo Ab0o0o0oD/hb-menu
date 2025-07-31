@@ -19,10 +19,10 @@ export const Footer = () => {
           <a href="https://www.facebook.com/profile.php?id=100091118036830" target="_blank" rel="noopener noreferrer">
             <img src={facebook} alt={'facebook'} className="w-6 h-6" />
           </a>
-          <a href="https://tiktok.com/@hungrybird.food" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.tiktok.com/@hungry.birds.rest3" target="_blank" rel="noopener noreferrer">
             <img src={tiktok} alt={'instagram'} className="w-6 h-6" />
           </a>
-          <a href="https://instagram.com/hungrybird.food/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/hung.rybirdsrestaurant/" target="_blank" rel="noopener noreferrer">
             <img src={insta} alt={'tiktok'} className="w-6 h-6" />
           </a>
           <a href="tel:+4792244972" target="_blank" rel="noopener noreferrer">
