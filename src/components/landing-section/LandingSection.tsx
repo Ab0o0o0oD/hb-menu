@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import landing from '@/assets/landing-image.png';
 import { useLang } from '@/i18n/LangContext';
 
@@ -16,12 +17,12 @@ export const LandingSection: React.FC = () => {
             {t.landing.subtitle}
           </p>
           <div className="flex justify-center md:justify-start">
-            <a
-              href="#menu-section"
+            <Link
+              to="/menu"
               className="inline-flex border border-hb-gold hover:bg-hb-gold hover:text-hb-navy justify-center rounded-full text-xl font-medium items-center py-5 px-10 text-hb-gold transition-colors"
             >
               {t.landing.cta}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

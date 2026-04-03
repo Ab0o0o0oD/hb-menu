@@ -1,13 +1,34 @@
 import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Logo } from '@/pages/Header/Logo.tsx';
 import { getHeaderData } from '@/pages/Navigation/menuData.tsx';
-import { HeaderLink } from '@/pages/Navigation/HeaderLink.tsx';
 import { useLang } from '@/i18n/LangContext';
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t, toggleLang } = useLang();
+  const navigate = useNavigate();
   const headerData = getHeaderData(t);
+
+  const handleNavClick = (href: string) => {
+    setMobileMenuOpen(false);
+
+    if (href.includes('#')) {
+      const [path, hash] = href.split('#');
+      const targetPath = path || '/';
+
+      if (window.location.pathname === targetPath) {
+        document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        navigate(targetPath);
+        setTimeout(() => {
+          document.getElementById(hash)?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    } else {
+      navigate(href);
+    }
+  };
 
   return (
     <div>
@@ -15,7 +36,24 @@ export const Header = () => {
         <Logo />
         <nav className="hidden lg:flex flex-grow items-center gap-8 justify-center">
           {headerData.map((item, index) => (
-            <HeaderLink key={index} item={item} />
+            item.href.includes('#') ? (
+              <button
+                key={index}
+                type="button"
+                onClick={() => handleNavClick(item.href)}
+                className="text-xl flex font-medium duration-300 text-white/60 hover:text-hb-gold"
+              >
+                {item.label}
+              </button>
+            ) : (
+              <Link
+                key={index}
+                to={item.href}
+                className="text-xl flex font-medium duration-300 text-white/60 hover:text-hb-gold"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
         <div className="flex items-center gap-3">
@@ -48,14 +86,25 @@ export const Header = () => {
       {mobileMenuOpen && (
         <nav className="lg:hidden flex flex-col items-center gap-4 py-6 bg-hb-navy/95 rounded-b-xl mt-2">
           {headerData.map((item, index) => (
-            <a
-              key={index}
-              href={item.href}
-              className="text-lg font-medium text-white/70 hover:text-hb-gold transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {item.label}
-            </a>
+            item.href.includes('#') ? (
+              <button
+                key={index}
+                type="button"
+                onClick={() => handleNavClick(item.href)}
+                className="text-lg font-medium text-white/70 hover:text-hb-gold transition-colors"
+              >
+                {item.label}
+              </button>
+            ) : (
+              <Link
+                key={index}
+                to={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-lg font-medium text-white/70 hover:text-hb-gold transition-colors"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
       )}

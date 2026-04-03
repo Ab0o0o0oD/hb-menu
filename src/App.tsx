@@ -1,20 +1,16 @@
 import { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 import './App.css';
 import { Header } from '@/pages/Header';
 import { Footer } from '@/components/footer/Footer.tsx';
-import { LandingSection } from '@/components/landing-section/LandingSection.tsx';
-import { Menu } from '@/components/menu/Menu.tsx';
-import { HalfGridWithImg } from '@/components/ui/HalfGridWithImg.tsx';
-import { useLang } from '@/i18n/LangContext';
-import collageDishes from '@/assets/collage-dishes.png';
 import background from '@/assets/background.png';
 
 function App() {
-  const { t } = useLang();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [pathname]);
 
   return (
     <div
@@ -26,19 +22,7 @@ function App() {
           <section className="text-center text-white">
             <Header />
           </section>
-          <section>
-            <LandingSection />
-          </section>
-          <section>
-            <HalfGridWithImg
-              image={collageDishes}
-              title={t.about.title}
-              description={t.about.description}
-            />
-          </section>
-          <section>
-            <Menu />
-          </section>
+          <Outlet />
           <section>
             <Footer />
           </section>
