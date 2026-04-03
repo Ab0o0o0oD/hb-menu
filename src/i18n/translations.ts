@@ -1,5 +1,15 @@
 export type Lang = 'nb' | 'en';
 
+type SpecialtyItem = {
+    name: string;
+    description: string;
+};
+
+type Feature = {
+    title: string;
+    description: string;
+};
+
 type Translations = {
     [K in Lang]: {
         nav: {
@@ -16,6 +26,28 @@ type Translations = {
         about: {
             title: string;
             description: string;
+        };
+        specialties: {
+            heading: string;
+            subtitle: string;
+            items: {
+                shawarma: SpecialtyItem;
+                falafel: SpecialtyItem;
+                crispy: SpecialtyItem;
+            };
+        };
+        whyUs: {
+            heading: string;
+            features: {
+                fresh: Feature;
+                recipe: Feature;
+                fast: Feature;
+            };
+        };
+        ctaBanner: {
+            heading: string;
+            subtitle: string;
+            cta: string;
         };
         menu: {
             heading: string;
@@ -52,6 +84,46 @@ export const translations: Translations = {
                 'Hver rett er tilberedt med kjærlighet, omsorg og dyp respekt for tradisjonen.\n' +
                 'Utforsk vår unike meny og bli en del av vår kulinariske reise.',
         },
+        specialties: {
+            heading: 'Våre Spesialiteter',
+            subtitle: 'Oppdag smakene som har gjort oss til en favoritt i Oslo',
+            items: {
+                shawarma: {
+                    name: 'Syrisk Shawarma',
+                    description: 'Saftig marinert kjøtt, langsomt stekt og servert i mykt brød med friske grønnsaker og hjemmelaget saus.',
+                },
+                falafel: {
+                    name: 'Falafel Rull',
+                    description: 'Sprøstekte kikerter med urter, servert med frisk salat, syltet løk og kremet tahinisaus.',
+                },
+                crispy: {
+                    name: 'Crispy Chicken',
+                    description: 'Gyllen og sprø kylling med vår signatur krydderblanding, pakket i en varm tortilla med frisk salat.',
+                },
+            },
+        },
+        whyUs: {
+            heading: 'Hvorfor Hungry Birds?',
+            features: {
+                fresh: {
+                    title: 'Ferske Råvarer',
+                    description: 'Vi bruker kun de ferskeste ingrediensene, levert daglig til kjøkkenet vårt for å sikre topp kvalitet.',
+                },
+                recipe: {
+                    title: 'Autentiske Oppskrifter',
+                    description: 'Våre oppskrifter er overlevert gjennom generasjoner, med ekte syriske smaker og tradisjoner.',
+                },
+                fast: {
+                    title: 'Rask Servering',
+                    description: 'Nyt et raskt måltid uten å gå på kompromiss med kvaliteten. Fersk mat, klar på kort tid.',
+                },
+            },
+        },
+        ctaBanner: {
+            heading: 'Klar til å bestille?',
+            subtitle: 'Utforsk hele menyen vår med shawarma, falafel, pizza, frokost og mye mer.',
+            cta: 'Se hele menyen',
+        },
         menu: {
             heading: 'Restaurant Meny',
             subtitle: 'En smak du aldri glemmer',
@@ -83,6 +155,46 @@ export const translations: Translations = {
                 'We are passionate about bringing the finest flavors of Syria to your table.\n' +
                 'Every dish is prepared with love, care, and a deep respect for tradition.\n' +
                 'Explore our unique menu and become a part of our culinary journey.',
+        },
+        specialties: {
+            heading: 'Our Specialties',
+            subtitle: 'Discover the flavors that made us a favorite in Oslo',
+            items: {
+                shawarma: {
+                    name: 'Syrian Shawarma',
+                    description: 'Juicy marinated meat, slow-roasted and served in soft bread with fresh vegetables and homemade sauce.',
+                },
+                falafel: {
+                    name: 'Falafel Wrap',
+                    description: 'Crispy fried chickpeas with herbs, served with fresh salad, pickled onion and creamy tahini sauce.',
+                },
+                crispy: {
+                    name: 'Crispy Chicken',
+                    description: 'Golden and crispy chicken with our signature spice blend, wrapped in a warm tortilla with fresh salad.',
+                },
+            },
+        },
+        whyUs: {
+            heading: 'Why Hungry Birds?',
+            features: {
+                fresh: {
+                    title: 'Fresh Ingredients',
+                    description: 'We use only the freshest ingredients, delivered daily to our kitchen to ensure top quality.',
+                },
+                recipe: {
+                    title: 'Authentic Recipes',
+                    description: 'Our recipes have been passed down through generations, with genuine Syrian flavors and traditions.',
+                },
+                fast: {
+                    title: 'Quick Service',
+                    description: 'Enjoy a quick meal without compromising on quality. Fresh food, ready in no time.',
+                },
+            },
+        },
+        ctaBanner: {
+            heading: 'Ready to order?',
+            subtitle: 'Explore our full menu with shawarma, falafel, pizza, breakfast and much more.',
+            cta: 'View full menu',
         },
         menu: {
             heading: 'Restaurant Menu',
