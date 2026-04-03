@@ -2,7 +2,11 @@ import insta from '../../assets/ig-instagram-icon.svg';
 import tiktok from '../../assets/tiktok-color-icon.svg';
 import call from '../../assets/accept-call-icon.svg';
 import facebook from '../../assets/facebook-round-color-icon.svg';
+import { useLang } from '@/i18n/LangContext';
+
 export const Footer = () => {
+  const { t } = useLang();
+
   return (
     <footer className="flex flex-col space-y-10 justify-center m-10" id="footer">
       <div className="flex flex-col items-center space-y-2 text-white/70">
@@ -12,7 +16,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col items-center space-y-5">
-        <h2 className="text-xl text-white">Follow us:</h2>
+        <h2 className="text-xl text-white">{t.footer.followUs}</h2>
         <div className="flex justify-center space-x-5">
           <a href="https://www.facebook.com/profile.php?id=100091118036830" target="_blank" rel="noopener noreferrer">
             <img src={facebook} alt="Facebook" className="w-6 h-6" />
@@ -28,7 +32,7 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <p className="text-center text-white/40 font-medium">&copy; 2026 Hungry Birds AS. All rights reserved.</p>
+      <p className="text-center text-white/40 font-medium">{t.footer.rights}</p>
     </footer>
   );
 };

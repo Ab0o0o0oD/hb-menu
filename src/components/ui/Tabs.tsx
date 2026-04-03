@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import menu from '@/menu.ts';
 import type { MenuCategory, MenuItem } from '@/menu.ts';
+import { useLang } from '@/i18n/LangContext';
 
 const categoryKeys = Object.keys(menu);
 
@@ -23,6 +24,7 @@ const MenuItemRow = ({ item, index }: { item: MenuItem; index: number }) => (
 );
 
 const CategoryContent = ({ category }: { category: MenuCategory }) => {
+  const { t } = useLang();
   const subcategories = category.items.reduce(
     (acc, item) => {
       const sub = item.subcategory || '_default';
@@ -54,7 +56,7 @@ const CategoryContent = ({ category }: { category: MenuCategory }) => {
         : category.items.map((item, i) => <MenuItemRow key={i} item={item} index={i} />)}
       {category.extras && (
         <div className="mt-4 p-3 bg-hb-navy-light/50 rounded-lg">
-          <p className="text-hb-gold text-xs font-semibold">Ekstra tilbehør:</p>
+          <p className="text-hb-gold text-xs font-semibold">{t.menu.extras}</p>
           <p className="text-white/70 text-xs mt-1">{category.extras}</p>
         </div>
       )}

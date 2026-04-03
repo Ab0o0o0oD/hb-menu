@@ -1,7 +1,10 @@
 import type { HeaderItem } from '@/types/menu.ts';
+import type { translations } from '@/i18n/translations';
 
-export const headerData: HeaderItem[] = [
-  { label: 'Home', href: '#home-section' },
-  { label: 'Menu', href: '#menu-section' },
-  { label: 'About Us', href: '#footer' },
+type TranslationValues = (typeof translations)[keyof typeof translations];
+
+export const getHeaderData = (t: TranslationValues): HeaderItem[] => [
+  { label: t.nav.home, href: '#home-section' },
+  { label: t.nav.menu, href: '#menu-section' },
+  { label: t.nav.aboutUs, href: '#footer' },
 ];

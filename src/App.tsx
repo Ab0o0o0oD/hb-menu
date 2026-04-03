@@ -5,10 +5,13 @@ import { Footer } from '@/components/footer/Footer.tsx';
 import { LandingSection } from '@/components/landing-section/LandingSection.tsx';
 import { Menu } from '@/components/menu/Menu.tsx';
 import { HalfGridWithImg } from '@/components/ui/HalfGridWithImg.tsx';
+import { useLang } from '@/i18n/LangContext';
 import collageDishes from '@/assets/collage-dishes.png';
 import background from '@/assets/background.png';
 
 function App() {
+  const { t } = useLang();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,12 +32,8 @@ function App() {
           <section>
             <HalfGridWithImg
               image={collageDishes}
-              title={'A Taste of Syria, Made with Love'}
-              description={
-                'We are passionate about bringing the finest flavors of Syria to your table.\n' +
-                'Every dish is prepared with love, care, and a deep respect for tradition.\n' +
-                'Explore our unique menu and become a part of our culinary journey.'
-              }
+              title={t.about.title}
+              description={t.about.description}
             />
           </section>
           <section>
