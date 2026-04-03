@@ -20,40 +20,40 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Syriansk Shawarma i Rull / Syrian Shawarma Roll',
         description: 'kylling 130 g, syltet agurk, hvitløkssaus',
-        price: '180 KR',
+        price: '120 KR',
         allergens: 'E, G',
       },
       {
         name: 'Shawarma i Tallerken / Shawarma on Plate',
         description:
           'Rullet i brød skåret i biter og servert på tallerken med italiensk salat, fries og hvitløksdressing',
-        price: '199 KR',
+        price: '180 KR',
         allergens: 'E, G',
       },
       {
         name: 'Hungry Birds Shawarma',
         description:
           'kylling 130 g, ost og champignon i brød, servert med syltet agurk, italiensk salat, fries, hvitløkssaus',
-        price: '130 KR',
+        price: '199 KR',
         allergens: 'E, G',
       },
       {
         name: 'Shawarma Snacks Box',
         description: '100 g kylling, pommes frites, syltet agurk, hvitløkssaus',
-        price: '189 KR',
+        price: '130 KR',
         allergens: 'E, G',
       },
       {
         name: 'Shawarma Lam i Rull / Lamb Shawarma Roll',
         description: 'lam 130 g, persille, løk, tomat, tahinisaus, granateplesirup',
-        price: '140 KR',
+        price: '145 KR',
         allergens: 'E, G',
       },
       {
         name: 'Shawarma i Tallerken (Lam) / Shawarma on Plate (Lamb)',
         description:
           'lam 130 g, rullet i brød skåret i biter og servert med persille, tomat, løk, tahinisaus, granateplesirup, fries, syltet agurk',
-        price: '185 KR',
+        price: '189 KR',
         allergens: 'E, G',
       },
     ],
@@ -144,7 +144,7 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Hummus',
         description: 'Kremet dip av kikerter med olivenolje',
-        price: '69 KR',
+        price: '79 KR',
         allergens: '*SF',
       },
       {
@@ -163,7 +163,7 @@ const menu: Record<string, MenuCategory> = {
         name: 'Yalanji',
         description:
           '5 stk vinblader fylt med ris, grønnsaker og granateplesaus. Serveres kalde',
-        price: '79 KR',
+        price: '69 KR',
         allergens: '*V',
       },
       {
@@ -177,11 +177,6 @@ const menu: Record<string, MenuCategory> = {
     title: 'Varme Forretter / Hot Appetizers',
     items: [
       {
-        name: 'Falafel',
-        description: 'Falafel',
-        price: '79 KR',
-      },
-      {
         name: 'Frityrstekt kibbeh (3 stk)',
         description: 'Laget av bulgur og fylt med kjøttdeig, løk og valnøtter',
         price: '139 KR',
@@ -194,7 +189,7 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Crispy Tender',
         description: '4/6 stk fritert kyllingfilet, pommes, italiensk salat, hvitløksdressing',
-        price: '189 KR / 229 KR',
+        price: '199 KR / 239 KR',
         allergens: '*G, E, M, P',
       },
     ],
@@ -217,7 +212,7 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Falafel Snacks Salat',
         description: '7 stk falafel, salat, tomat, tahinisaus',
-        price: '89 KR',
+        price: '99 KR',
         allergens: 'G',
       },
     ],
@@ -412,13 +407,13 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Muhammara-manakish',
         description: 'Laget av deig med paprika puré, olivenolje og ost svart frø',
-        price: '35 KR',
+        price: '39 KR',
         allergens: 'G, M',
       },
       {
         name: 'Zaatar-manakish',
         description: 'Laget av deig med zaater og olivenolje',
-        price: '35 KR',
+        price: '39 KR',
         allergens: 'G',
       },
       {
