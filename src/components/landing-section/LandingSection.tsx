@@ -3,7 +3,7 @@ import landing from '@/assets/landing-image.png';
 
 export const LandingSection: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 py-8">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 py-8 min-h-[70svh] md:min-h-0 justify-center">
       <div className="w-full md:w-1/2 flex justify-center text-center md:text-left">
         <div>
           <h1 className="text-4xl lg:text-5xl font-semibold mb-5 text-white">

@@ -88,7 +88,15 @@ export const Tabs = () => {
     };
   }, []);
 
+  const hasUserInteracted = useRef(false);
+
+  const handleTabClick = (key: string) => {
+    hasUserInteracted.current = true;
+    setActiveTab(key);
+  };
+
   useEffect(() => {
+    if (!hasUserInteracted.current) return;
     const btn = tabRefs.current[activeTab];
     if (btn) {
       btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
@@ -130,7 +138,7 @@ export const Tabs = () => {
                     ? 'bg-hb-red text-white border-hb-red shadow-lg shadow-hb-red/30'
                     : 'bg-transparent text-white/70 border-white/20 hover:border-hb-gold/60 hover:text-white'
                 }`}
-                onClick={() => setActiveTab(key)}
+                onClick={() => handleTabClick(key)}
               >
                 {label}
               </button>

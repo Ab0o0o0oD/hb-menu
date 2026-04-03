@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import { Header } from '@/pages/Header';
 import { Footer } from '@/components/footer/Footer.tsx';
@@ -8,6 +9,10 @@ import collageDishes from '@/assets/collage-dishes.png';
 import background from '@/assets/background.png';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div
       className="min-h-screen bg-cover bg-center bg-fixed bg-no-repeat"
