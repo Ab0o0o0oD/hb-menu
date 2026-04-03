@@ -20,7 +20,7 @@ const menu: Record<string, MenuCategory> = {
       {
         name: 'Syriansk Shawarma i Rull / Syrian Shawarma Roll',
         description: 'kylling 130 g, syltet agurk, hvitløkssaus',
-        price: '120 KR',
+        price: '130 KR',
         allergens: 'E, G',
       },
       {
