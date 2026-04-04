@@ -8,7 +8,7 @@ export const Footer = () => {
   const { t } = useLang();
 
   return (
-    <footer className="flex flex-col space-y-10 justify-center m-10" id="footer">
+    <footer className="flex flex-col space-y-10 justify-center py-12" id="footer">
       <div className="flex flex-col items-center space-y-2 text-white/70">
         <p className="text-sm">Oslo Storgate 53 D</p>
         <a href="tel:+4792244972" className="text-hb-gold hover:text-hb-gold/80 text-sm font-semibold">

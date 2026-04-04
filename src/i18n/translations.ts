@@ -105,6 +105,21 @@ type Translations = {
             followUs: string;
             rights: string;
         };
+        dashboard: {
+            heading: string;
+            subtitle: string;
+            login: {
+                heading: string;
+                subtitle: string;
+                placeholder: string;
+                submit: string;
+                error: string;
+            };
+            setup: {
+                heading: string;
+                description: string;
+            };
+        };
         langToggle: string;
     };
 };
@@ -245,6 +260,21 @@ export const translations: Translations = {
             followUs: 'Følg oss:',
             rights: '© 2026 Hungry Birds AS. Alle rettigheter reservert.',
         },
+        dashboard: {
+            heading: 'Statistikk',
+            subtitle: 'Oversikt over besøkende, trafikkilder og sidevisninger.',
+            login: {
+                heading: 'Beskyttet Side',
+                subtitle: 'Skriv inn passordet for å se statistikk.',
+                placeholder: 'Passord',
+                submit: 'Logg inn',
+                error: 'Feil passord. Prøv igjen.',
+            },
+            setup: {
+                heading: 'Analyse Ikke Konfigurert',
+                description: 'Legg til Umami-delingslenken i miljøvariablene for å se statistikk her.',
+            },
+        },
         langToggle: 'EN',
     },
     en: {
@@ -381,6 +411,21 @@ export const translations: Translations = {
         footer: {
             followUs: 'Follow us:',
             rights: '© 2026 Hungry Birds AS. All rights reserved.',
+        },
+        dashboard: {
+            heading: 'Analytics',
+            subtitle: 'Overview of visitors, traffic sources and page views.',
+            login: {
+                heading: 'Protected Page',
+                subtitle: 'Enter the password to view analytics.',
+                placeholder: 'Password',
+                submit: 'Log in',
+                error: 'Wrong password. Try again.',
+            },
+            setup: {
+                heading: 'Analytics Not Configured',
+                description: 'Add the Umami share URL to your environment variables to see analytics here.',
+            },
         },
         langToggle: 'NO',
     },

@@ -18,7 +18,7 @@ function App() {
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="min-h-screen bg-hb-navy/85">
-        <div className="mx-auto max-w-7xl px-5 py-1 md:px-10 flex flex-col gap-5">
+        <div className="mx-auto max-w-7xl px-5 py-4 md:px-10 flex flex-col gap-5">
           <section className="text-center text-white">
             <Header />
           </section>

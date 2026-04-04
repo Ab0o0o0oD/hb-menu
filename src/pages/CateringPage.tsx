@@ -48,7 +48,7 @@ export const CateringPage = () => {
   const steps = ['contact', 'plan', 'enjoy'] as const;
 
   return (
-    <div className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="pb-12">
       <section className="text-center py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-hb-gold mb-4">{t.catering.heading}</h1>
         <p className="text-lg text-white/60 max-w-2xl mx-auto">{t.catering.subtitle}</p>

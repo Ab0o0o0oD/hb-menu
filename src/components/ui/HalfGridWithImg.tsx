@@ -8,7 +8,7 @@ interface HalfGridWithImgProps {
 
 export const HalfGridWithImg: FC<HalfGridWithImgProps> = ({ image, title, description }: HalfGridWithImgProps) => {
   return (
-    <div className="py-8">
+    <div className="py-12">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center">
         <div className="flex justify-start">
           <img
