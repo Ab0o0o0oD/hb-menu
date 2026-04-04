@@ -6,6 +6,7 @@ import App from './App.tsx';
 import { LangProvider } from '@/i18n/LangContext';
 import { HomePage } from '@/pages/HomePage.tsx';
 import { MenuPage } from '@/pages/MenuPage.tsx';
+import { CateringPage } from '@/pages/CateringPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
           <Route element={<App />}>
             <Route index element={<HomePage />} />
             <Route path="menu" element={<MenuPage />} />
+            <Route path="catering" element={<CateringPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

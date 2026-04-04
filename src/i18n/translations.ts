@@ -15,6 +15,7 @@ type Translations = {
         nav: {
             home: string;
             menu: string;
+            catering: string;
             aboutUs: string;
         };
         landing: {
@@ -54,6 +55,52 @@ type Translations = {
             subtitle: string;
             extras: string;
         };
+        catering: {
+            heading: string;
+            subtitle: string;
+            services: {
+                heading: string;
+                items: {
+                    corporate: { title: string; description: string };
+                    weddings: { title: string; description: string };
+                    private: { title: string; description: string };
+                };
+            };
+            howItWorks: {
+                heading: string;
+                steps: {
+                    contact: { title: string; description: string };
+                    plan: { title: string; description: string };
+                    enjoy: { title: string; description: string };
+                };
+            };
+            menuInspiration: {
+                heading: string;
+                description: string;
+                cta: string;
+            };
+            form: {
+                heading: string;
+                subtitle: string;
+                name: string;
+                email: string;
+                phone: string;
+                eventDate: string;
+                guests: string;
+                eventType: string;
+                eventTypes: {
+                    corporate: string;
+                    wedding: string;
+                    birthday: string;
+                    other: string;
+                };
+                message: string;
+                submit: string;
+                sending: string;
+                success: string;
+                error: string;
+            };
+        };
         footer: {
             followUs: string;
             rights: string;
@@ -67,6 +114,7 @@ export const translations: Translations = {
         nav: {
             home: 'Hjem',
             menu: 'Meny',
+            catering: 'Catering',
             aboutUs: 'Om oss',
         },
         landing: {
@@ -129,6 +177,70 @@ export const translations: Translations = {
             subtitle: 'En smak du aldri glemmer',
             extras: 'Ekstra tilbehør:',
         },
+        catering: {
+            heading: 'Catering',
+            subtitle: 'La oss gjøre ditt arrangement uforglemmelig med autentisk syrisk mat.',
+            services: {
+                heading: 'Våre Catering-tjenester',
+                items: {
+                    corporate: {
+                        title: 'Bedriftsarrangementer',
+                        description: 'Imponér kollegaer og kunder med et utvalg av våre mest populære retter. Perfekt for møter, seminarer og firmafester.',
+                    },
+                    weddings: {
+                        title: 'Bryllup & Feiring',
+                        description: 'Gjør den store dagen ekstra spesiell med et rikt utvalg av syriske spesialiteter. Vi tilpasser menyen etter dine ønsker.',
+                    },
+                    private: {
+                        title: 'Private Selskaper',
+                        description: 'Bursdager, familiesammenkomster eller vennemiddager — vi leverer smakfull mat til enhver anledning.',
+                    },
+                },
+            },
+            howItWorks: {
+                heading: 'Slik Bestiller Du',
+                steps: {
+                    contact: {
+                        title: '1. Kontakt Oss',
+                        description: 'Fyll ut skjemaet nedenfor med detaljer om arrangementet ditt.',
+                    },
+                    plan: {
+                        title: '2. Vi Planlegger Sammen',
+                        description: 'Vi tar kontakt for å skreddersy menyen etter dine behov og budsjett.',
+                    },
+                    enjoy: {
+                        title: '3. Nyt Maten',
+                        description: 'Vi leverer fersk, deilig mat rett til arrangementet ditt.',
+                    },
+                },
+            },
+            menuInspiration: {
+                heading: 'Inspirert av Vår Meny',
+                description: 'Vår catering-meny er basert på de samme autentiske oppskriftene du kjenner fra restauranten. Shawarma, falafel, crispy chicken og mye mer — alt tilpasset store grupper.',
+                cta: 'Se hele menyen',
+            },
+            form: {
+                heading: 'Bestill Catering',
+                subtitle: 'Fortell oss om arrangementet ditt, så tar vi kontakt innen 24 timer.',
+                name: 'Fullt navn',
+                email: 'E-post',
+                phone: 'Telefon',
+                eventDate: 'Dato for arrangement',
+                guests: 'Antall gjester',
+                eventType: 'Type arrangement',
+                eventTypes: {
+                    corporate: 'Bedriftsarrangement',
+                    wedding: 'Bryllup',
+                    birthday: 'Bursdag',
+                    other: 'Annet',
+                },
+                message: 'Fortell oss om arrangementet ditt',
+                submit: 'Send forespørsel',
+                sending: 'Sender...',
+                success: 'Takk! Vi har mottatt forespørselen din og tar kontakt snart.',
+                error: 'Noe gikk galt. Vennligst prøv igjen eller kontakt oss direkte.',
+            },
+        },
         footer: {
             followUs: 'Følg oss:',
             rights: '© 2026 Hungry Birds AS. Alle rettigheter reservert.',
@@ -139,6 +251,7 @@ export const translations: Translations = {
         nav: {
             home: 'Home',
             menu: 'Menu',
+            catering: 'Catering',
             aboutUs: 'About Us',
         },
         landing: {
@@ -200,6 +313,70 @@ export const translations: Translations = {
             heading: 'Restaurant Menu',
             subtitle: 'A taste you will never forget',
             extras: 'Extra sides:',
+        },
+        catering: {
+            heading: 'Catering',
+            subtitle: 'Let us make your event unforgettable with authentic Syrian cuisine.',
+            services: {
+                heading: 'Our Catering Services',
+                items: {
+                    corporate: {
+                        title: 'Corporate Events',
+                        description: 'Impress colleagues and clients with a selection of our most popular dishes. Perfect for meetings, seminars and company parties.',
+                    },
+                    weddings: {
+                        title: 'Weddings & Celebrations',
+                        description: 'Make the big day extra special with a rich selection of Syrian specialties. We tailor the menu to your wishes.',
+                    },
+                    private: {
+                        title: 'Private Parties',
+                        description: 'Birthdays, family gatherings or dinner with friends — we deliver delicious food for any occasion.',
+                    },
+                },
+            },
+            howItWorks: {
+                heading: 'How to Order',
+                steps: {
+                    contact: {
+                        title: '1. Contact Us',
+                        description: 'Fill out the form below with details about your event.',
+                    },
+                    plan: {
+                        title: '2. We Plan Together',
+                        description: 'We will get in touch to tailor the menu to your needs and budget.',
+                    },
+                    enjoy: {
+                        title: '3. Enjoy the Food',
+                        description: 'We deliver fresh, delicious food straight to your event.',
+                    },
+                },
+            },
+            menuInspiration: {
+                heading: 'Inspired by Our Menu',
+                description: 'Our catering menu is based on the same authentic recipes you know from our restaurant. Shawarma, falafel, crispy chicken and much more — all adapted for large groups.',
+                cta: 'View full menu',
+            },
+            form: {
+                heading: 'Order Catering',
+                subtitle: 'Tell us about your event and we will get back to you within 24 hours.',
+                name: 'Full name',
+                email: 'Email',
+                phone: 'Phone',
+                eventDate: 'Event date',
+                guests: 'Number of guests',
+                eventType: 'Event type',
+                eventTypes: {
+                    corporate: 'Corporate event',
+                    wedding: 'Wedding',
+                    birthday: 'Birthday',
+                    other: 'Other',
+                },
+                message: 'Tell us about your event',
+                submit: 'Send request',
+                sending: 'Sending...',
+                success: 'Thank you! We have received your request and will be in touch soon.',
+                error: 'Something went wrong. Please try again or contact us directly.',
+            },
         },
         footer: {
             followUs: 'Follow us:',
