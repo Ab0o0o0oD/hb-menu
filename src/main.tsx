@@ -7,6 +7,7 @@ import { LangProvider } from '@/i18n/LangContext';
 import { HomePage } from '@/pages/HomePage.tsx';
 import { MenuPage } from '@/pages/MenuPage.tsx';
 import { CateringPage } from '@/pages/CateringPage.tsx';
+import { AboutPage } from '@/pages/AboutPage.tsx';
 import { DashboardPage } from '@/pages/DashboardPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')!).render(
             <Route index element={<HomePage />} />
             <Route path="menu" element={<MenuPage />} />
             <Route path="catering" element={<CateringPage />} />
+            <Route path="about" element={<AboutPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
           </Route>
         </Routes>

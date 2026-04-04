@@ -28,6 +28,40 @@ type Translations = {
             title: string;
             description: string;
         };
+        aboutPage: {
+            heading: string;
+            subtitle: string;
+            story: {
+                heading: string;
+                p1: string;
+                p2: string;
+                imageAlt: string;
+            };
+            values: {
+                heading: string;
+                items: {
+                    authenticity: { title: string; description: string };
+                    quality: { title: string; description: string };
+                    community: { title: string; description: string };
+                };
+            };
+            findUs: {
+                heading: string;
+                address: { label: string };
+                phone: { label: string };
+                hours: {
+                    label: string;
+                    weekdays: string;
+                    weekends: string;
+                };
+            };
+            cta: {
+                heading: string;
+                description: string;
+                menuButton: string;
+                cateringButton: string;
+            };
+        };
         specialties: {
             heading: string;
             subtitle: string;
@@ -146,6 +180,49 @@ export const translations: Translations = {
                 'Vi brenner for å bringe de fineste smakene fra Syria til ditt bord.\n' +
                 'Hver rett er tilberedt med kjærlighet, omsorg og dyp respekt for tradisjonen.\n' +
                 'Utforsk vår unike meny og bli en del av vår kulinariske reise.',
+        },
+        aboutPage: {
+            heading: 'Om Oss',
+            subtitle: 'Bli kjent med historien bak Hungry Birds og vår lidenskap for autentisk syrisk mat.',
+            story: {
+                heading: 'Vår Historie',
+                p1: 'Hungry Birds ble født fra en drøm om å bringe autentiske syriske smaker til hjertet av Oslo. Med oppskrifter overlevert gjennom generasjoner, tilbereder vi hver rett med den samme kjærligheten og omsorgen som våre bestemødre brukte.',
+                p2: 'Fra saftig shawarma til sprø falafel — hver smak forteller en historie om tradisjon, fellesskap og lidenskap for godt håndverk. Vi er stolte av å servere mat som bringer mennesker sammen.',
+                imageAlt: 'Hungry Birds retter',
+            },
+            values: {
+                heading: 'Våre Verdier',
+                items: {
+                    authenticity: {
+                        title: 'Autentisitet',
+                        description: 'Vi følger tradisjonelle syriske oppskrifter og teknikker for å levere ekte smaker fra Midtøsten.',
+                    },
+                    quality: {
+                        title: 'Kvalitet',
+                        description: 'Kun de ferskeste råvarene brukes. Vi går aldri på kompromiss med kvaliteten på maten vår.',
+                    },
+                    community: {
+                        title: 'Fellesskap',
+                        description: 'Mat bringer mennesker sammen. Vi ønsker alle velkommen til vårt bord med varme og gjestfrihet.',
+                    },
+                },
+            },
+            findUs: {
+                heading: 'Finn Oss',
+                address: { label: 'Adresse' },
+                phone: { label: 'Telefon' },
+                hours: {
+                    label: 'Åpningstider',
+                    weekdays: 'Man–Fre: 11:00–22:00',
+                    weekends: 'Lør–Søn: 12:00–22:00',
+                },
+            },
+            cta: {
+                heading: 'Bli en del av Hungry Birds-familien',
+                description: 'Utforsk menyen vår eller bestill catering til ditt neste arrangement.',
+                menuButton: 'Se menyen',
+                cateringButton: 'Bestill catering',
+            },
         },
         specialties: {
             heading: 'Våre Spesialiteter',
@@ -298,6 +375,49 @@ export const translations: Translations = {
                 'We are passionate about bringing the finest flavors of Syria to your table.\n' +
                 'Every dish is prepared with love, care, and a deep respect for tradition.\n' +
                 'Explore our unique menu and become a part of our culinary journey.',
+        },
+        aboutPage: {
+            heading: 'About Us',
+            subtitle: 'Get to know the story behind Hungry Birds and our passion for authentic Syrian food.',
+            story: {
+                heading: 'Our Story',
+                p1: 'Hungry Birds was born from a dream to bring authentic Syrian flavors to the heart of Oslo. With recipes passed down through generations, we prepare every dish with the same love and care our grandmothers used.',
+                p2: 'From juicy shawarma to crispy falafel — every flavor tells a story of tradition, community, and passion for great craftsmanship. We are proud to serve food that brings people together.',
+                imageAlt: 'Hungry Birds dishes',
+            },
+            values: {
+                heading: 'Our Values',
+                items: {
+                    authenticity: {
+                        title: 'Authenticity',
+                        description: 'We follow traditional Syrian recipes and techniques to deliver genuine Middle Eastern flavors.',
+                    },
+                    quality: {
+                        title: 'Quality',
+                        description: 'Only the freshest ingredients are used. We never compromise on the quality of our food.',
+                    },
+                    community: {
+                        title: 'Community',
+                        description: 'Food brings people together. We welcome everyone to our table with warmth and hospitality.',
+                    },
+                },
+            },
+            findUs: {
+                heading: 'Find Us',
+                address: { label: 'Address' },
+                phone: { label: 'Phone' },
+                hours: {
+                    label: 'Opening Hours',
+                    weekdays: 'Mon–Fri: 11:00–22:00',
+                    weekends: 'Sat–Sun: 12:00–22:00',
+                },
+            },
+            cta: {
+                heading: 'Join the Hungry Birds family',
+                description: 'Explore our menu or order catering for your next event.',
+                menuButton: 'View menu',
+                cateringButton: 'Order catering',
+            },
         },
         specialties: {
             heading: 'Our Specialties',

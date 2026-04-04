@@ -7,5 +7,5 @@ export const getHeaderData = (t: TranslationValues): HeaderItem[] => [
   { label: t.nav.home, href: '/' },
   { label: t.nav.menu, href: '/menu' },
   { label: t.nav.catering, href: '/catering' },
-  { label: t.nav.aboutUs, href: '/#footer' },
+  { label: t.nav.aboutUs, href: '/about' },
 ];
