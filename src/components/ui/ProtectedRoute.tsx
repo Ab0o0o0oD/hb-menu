@@ -1,7 +1,7 @@
 import { useState, type FC, type ReactNode } from 'react';
 import { useLang } from '@/i18n/LangContext';
 
-const DASHBOARD_PASSWORD = import.meta.env.VITE_DASHBOARD_PASSWORD || 'hungrybirds2026';
+const DASHBOARD_PASSWORD = import.meta.env.VITE_DASHBOARD_PASSWORD;
 const SESSION_KEY = 'hb_dashboard_auth';
 
 interface ProtectedRouteProps {
