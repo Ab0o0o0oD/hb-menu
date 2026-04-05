@@ -154,6 +154,10 @@ type Translations = {
                 description: string;
             };
         };
+        googleDashboard: {
+            heading: string;
+            subtitle: string;
+        };
         seo: {
             home: { title: string; description: string };
             menu: { title: string; description: string };
@@ -357,6 +361,10 @@ export const translations: Translations = {
                 heading: 'Analyse Ikke Konfigurert',
                 description: 'Legg til Umami-delingslenken i miljøvariablene for å se statistikk her.',
             },
+        },
+        googleDashboard: {
+            heading: 'Google Analyse',
+            subtitle: 'Detaljert trafikkoversikt fra Google Analytics.',
         },
         seo: {
             home: {
@@ -570,6 +578,10 @@ export const translations: Translations = {
                 heading: 'Analytics Not Configured',
                 description: 'Add the Umami share URL to your environment variables to see analytics here.',
             },
+        },
+        googleDashboard: {
+            heading: 'Google Analytics',
+            subtitle: 'Detailed traffic overview from Google Analytics.',
         },
         seo: {
             home: {

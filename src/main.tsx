@@ -9,6 +9,7 @@ import { MenuPage } from '@/pages/MenuPage.tsx';
 import { CateringPage } from '@/pages/CateringPage.tsx';
 import { AboutPage } from '@/pages/AboutPage.tsx';
 import { DashboardPage } from '@/pages/DashboardPage.tsx';
+import { GoogleDashboardPage } from '@/pages/GoogleDashboardPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')!).render(
             <Route path="catering" element={<CateringPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="dashboard-google" element={<GoogleDashboardPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
