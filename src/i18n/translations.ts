@@ -154,6 +154,12 @@ type Translations = {
                 description: string;
             };
         };
+        seo: {
+            home: { title: string; description: string };
+            menu: { title: string; description: string };
+            catering: { title: string; description: string };
+            about: { title: string; description: string };
+        };
         langToggle: string;
     };
 };
@@ -352,6 +358,24 @@ export const translations: Translations = {
                 description: 'Legg til Umami-delingslenken i miljøvariablene for å se statistikk her.',
             },
         },
+        seo: {
+            home: {
+                title: 'Hungry Birds Restaurant — Autentisk Syrisk Mat i Oslo',
+                description: 'Hungry Birds Restaurant i Oslo serverer autentisk syrisk shawarma, falafel og crispy chicken. Besøk oss på Storgata 53 D eller bestill catering.',
+            },
+            menu: {
+                title: 'Meny — Hungry Birds Restaurant',
+                description: 'Utforsk menyen vår med shawarma, falafel, crispy chicken, pizza, frokost og mye mer. Fersk mat laget med kjærlighet.',
+            },
+            catering: {
+                title: 'Catering — Hungry Birds Restaurant',
+                description: 'Bestill catering fra Hungry Birds til bedriftsarrangementer, bryllup og private selskaper. Autentisk syrisk mat til enhver anledning.',
+            },
+            about: {
+                title: 'Om Oss — Hungry Birds Restaurant',
+                description: 'Bli kjent med historien bak Hungry Birds Restaurant. Autentiske syriske oppskrifter, ferske råvarer og lidenskap for god mat. Storgata 53 D, Oslo.',
+            },
+        },
         langToggle: 'EN',
     },
     en: {
@@ -545,6 +569,24 @@ export const translations: Translations = {
             setup: {
                 heading: 'Analytics Not Configured',
                 description: 'Add the Umami share URL to your environment variables to see analytics here.',
+            },
+        },
+        seo: {
+            home: {
+                title: 'Hungry Birds Restaurant — Authentic Syrian Food in Oslo',
+                description: 'Hungry Birds Restaurant in Oslo serves authentic Syrian shawarma, falafel and crispy chicken. Visit us at Storgata 53 D or order catering.',
+            },
+            menu: {
+                title: 'Menu — Hungry Birds Restaurant',
+                description: 'Explore our menu with shawarma, falafel, crispy chicken, pizza, breakfast and much more. Fresh food made with love.',
+            },
+            catering: {
+                title: 'Catering — Hungry Birds Restaurant',
+                description: 'Order catering from Hungry Birds for corporate events, weddings and private parties. Authentic Syrian food for any occasion.',
+            },
+            about: {
+                title: 'About Us — Hungry Birds Restaurant',
+                description: 'Get to know the story behind Hungry Birds Restaurant. Authentic Syrian recipes, fresh ingredients and passion for great food. Storgata 53 D, Oslo.',
             },
         },
         langToggle: 'NO',

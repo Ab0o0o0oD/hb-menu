@@ -49,6 +49,9 @@ export const CateringPage = () => {
 
   return (
     <div className="pb-12">
+      <title>{t.seo.catering.title}</title>
+      <meta name="description" content={t.seo.catering.description} />
+      <link rel="canonical" href="https://hungry-birds.no/catering" />
       <section className="text-center py-12">
         <h1 className="text-4xl md:text-5xl font-bold text-hb-gold mb-4">{t.catering.heading}</h1>
         <p className="text-lg text-white/60 max-w-2xl mx-auto">{t.catering.subtitle}</p>

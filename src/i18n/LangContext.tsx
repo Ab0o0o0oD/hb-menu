@@ -34,6 +34,7 @@ export const LangProvider = ({ children }: { children: ReactNode }) => {
             try {
                 localStorage.setItem(STORAGE_KEY, next);
             } catch {}
+            document.documentElement.lang = next === 'nb' ? 'nb' : 'en';
             return next;
         });
     }, []);
