@@ -1,4 +1,4 @@
-[![pages-build-deployment](https://github.com/Ab0o0o0oD/toolkit/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Ab0o0o0oD/toolkit/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/Ab0o0o0oD/hb-menu/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/Ab0o0o0oD/hb-menu/actions/workflows/pages/pages-build-deployment)
 
 # React + TypeScript + Vite
 
