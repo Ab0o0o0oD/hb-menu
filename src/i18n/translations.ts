@@ -92,6 +92,17 @@ type Translations = {
         catering: {
             heading: string;
             subtitle: string;
+            clients: {
+                heading: string;
+                subtitle: string;
+                items: {
+                    name: string;
+                    feedback: string;
+                    logoAlt: string;
+                }[];
+                prev: string;
+                next: string;
+            };
             services: {
                 heading: string;
                 items: {
@@ -282,6 +293,34 @@ export const translations: Translations = {
         catering: {
             heading: 'Catering',
             subtitle: 'La oss gjøre ditt arrangement uforglemmelig med autentisk syrisk mat.',
+            clients: {
+                heading: 'Våre Kunder',
+                subtitle: 'Vi er stolte av å ha levert til disse fantastiske kundene.',
+                items: [
+                    {
+                        name: 'Hersleb skole',
+                        feedback: 'Hungry Birds leverte deilig mat til vårt arrangement. Elevene og personalet var begeistret — fersk, smakfull og profesjonelt levert. Anbefales!',
+                        logoAlt: 'Hersleb skole logo',
+                    },
+                    {
+                        name: 'Microsoft',
+                        feedback: 'Vi bestilte catering til et internt arrangement, og maten var en stor suksess. Smakfulle retter, punktlig levering og enkel kommunikasjon hele veien.',
+                        logoAlt: 'Microsoft logo',
+                    },
+                    {
+                        name: 'Røde Kors',
+                        feedback: 'Hungry Birds har bidratt med mat til flere av våre arrangementer. Alltid varm, god og autentisk mat — og et team som virkelig bryr seg.',
+                        logoAlt: 'Røde Kors logo',
+                    },
+                    {
+                        name: 'Anker Studentbolig',
+                        feedback: 'Studentene våre elsker shawarmaen! Hungry Birds har vært vår faste leverandør på flere studentkvelder. Rask service og ekte syriske smaker.',
+                        logoAlt: 'Anker Studentbolig logo',
+                    },
+                ],
+                prev: 'Forrige',
+                next: 'Neste',
+            },
             services: {
                 heading: 'Våre Catering-tjenester',
                 items: {
@@ -499,6 +538,34 @@ export const translations: Translations = {
         catering: {
             heading: 'Catering',
             subtitle: 'Let us make your event unforgettable with authentic Syrian cuisine.',
+            clients: {
+                heading: 'Our Clients',
+                subtitle: 'We are proud to have catered for these amazing customers.',
+                items: [
+                    {
+                        name: 'Hersleb skole',
+                        feedback: 'Hungry Birds catered our event with delicious food. Students and staff loved it — fresh, flavorful and professionally delivered. Highly recommended!',
+                        logoAlt: 'Hersleb skole logo',
+                    },
+                    {
+                        name: 'Microsoft',
+                        feedback: 'We ordered catering for an internal event and the food was a huge hit. Flavorful dishes, on-time delivery and smooth communication throughout.',
+                        logoAlt: 'Microsoft logo',
+                    },
+                    {
+                        name: 'Røde Kors',
+                        feedback: 'Hungry Birds has provided food for several of our events. Always warm, delicious and authentic — and a team that genuinely cares.',
+                        logoAlt: 'Røde Kors logo',
+                    },
+                    {
+                        name: 'Anker Studentbolig',
+                        feedback: 'Our students love the shawarma! Hungry Birds has been our go-to caterer for student nights. Fast service and genuine Syrian flavors.',
+                        logoAlt: 'Anker Studentbolig logo',
+                    },
+                ],
+                prev: 'Previous',
+                next: 'Next',
+            },
             services: {
                 heading: 'Our Catering Services',
                 items: {

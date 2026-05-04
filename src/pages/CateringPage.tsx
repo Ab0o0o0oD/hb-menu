@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import { useLang } from '@/i18n/LangContext';
+import { TestimonialsSection } from '@/components/testimonials/TestimonialsSection';
 
 const EMAILJS_SERVICE_ID = 'service_0g5cjcr';
 const EMAILJS_TEMPLATE_ID = 'template_dxj1bkc';
@@ -110,6 +111,8 @@ export const CateringPage = () => {
           </Link>
         </div>
       </section>
+
+      <TestimonialsSection />
 
       <section className="py-12 max-w-3xl mx-auto">
         <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-10">
