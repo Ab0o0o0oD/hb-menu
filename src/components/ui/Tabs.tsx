@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import menu from '@/menu.ts';
+import menu, { menuEn } from '@/menu.ts';
 import type { MenuCategory, MenuItem } from '@/menu.ts';
 import { useLang } from '@/i18n/LangContext';
 
@@ -65,6 +65,8 @@ const CategoryContent = ({ category }: { category: MenuCategory }) => {
 };
 
 export const Tabs = () => {
+  const { lang } = useLang();
+  const activeMenu = lang === 'en' ? menuEn : menu;
   const [activeTab, setActiveTab] = useState(categoryKeys[0]);
   const scrollRef = useRef<HTMLDivElement>(null);
   const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
@@ -127,7 +129,7 @@ export const Tabs = () => {
         >
           {categoryKeys.map((key) => {
             const isActive = activeTab === key;
-            const label = menu[key].title.split(' / ')[0];
+            const label = activeMenu[key].title;
             return (
               <button
                 key={key}
@@ -151,9 +153,9 @@ export const Tabs = () => {
 
       <div className="mt-4">
         <h2 className="text-2xl md:text-3xl font-bold text-white mb-1">
-          {menu[activeTab].title}
+          {activeMenu[activeTab].title}
         </h2>
-        <CategoryContent category={menu[activeTab]} />
+        <CategoryContent category={activeMenu[activeTab]} />
       </div>
     </div>
   );
